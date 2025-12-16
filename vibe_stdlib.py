@@ -44,13 +44,13 @@ def vibeceil(x):
 # --------------------
 
 def vibeequal(a, b):
-    return _ask_llm(f"Are {a} and {b} equal? Answer true or false ONLY.") == "true"
+    return _ask_llm(f"Are {a} and {b} equal? Answer true or false ONLY.").lower() == "true"
 
 def vibegreater(a, b):
-    return _ask_llm(f"Is {a} greater than {b}? Answer true or false ONLY.") == "true"
+    return _ask_llm(f"Is {a} greater than {b}? Answer true or false ONLY.").lower() == "true"
 
 def vibelower(a, b):
-    return _ask_llm(f"Is {a} less than {b}? Answer true or false ONLY.") == "true"
+    return _ask_llm(f"Is {a} less than {b}? Answer true or false ONLY.").lower() == "true"
 
 # --------------------
 # List Operations
@@ -92,13 +92,13 @@ def vibereverse(s):
 # --------------------
 
 def vibeand(a, b):
-    return _ask_llm(f"What is {a} AND {b}? Answer true or false ONLY.") == "true"
+    return _ask_llm(f"What is {a} AND {b}? Answer true or false ONLY.").lower() == "true"
 
 def vibeor(a, b):
-    return _ask_llm(f"What is {a} OR {b}? Answer true or false ONLY.") == "true"
+    return _ask_llm(f"What is {a} OR {b}? Answer true or false ONLY.").lower() == "true"
 
 def vibenot(a):
-    return _ask_llm(f"What is NOT {a}? Answer true or false ONLY.") == "true"
+    return _ask_llm(f"What is NOT {a}? Answer true or false ONLY.").lower() == "true"
 
 # --------------------
 # Extensions
